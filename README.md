@@ -72,7 +72,7 @@ Add CI/CD pipeline with GitHub Actions.
 
 Author
 
-Developed by [Your Name]
+Developed by Yuktha D
 
 Author
 Yuktha D - https://github.com/YukthaDoddaRangappa?tab=repositories
