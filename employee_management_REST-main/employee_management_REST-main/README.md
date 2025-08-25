@@ -115,7 +115,6 @@ You can also test the API using:
 - Postman
 - curl commands
 
-### Author
 
 *Roshni N Kumar* - [GitHub](https://github.com/roshnikumar11)
 
