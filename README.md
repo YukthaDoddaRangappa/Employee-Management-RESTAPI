@@ -1,7 +1,6 @@
 # Employee-Management-RESTAPI
-The Employee Management System is a RESTful web application built with Spring Boot and MySQL to manage employee records efficiently. It follows a layered architecture for clean code organization and scalability. The application is containerized using Docker to ensure consistent deployments across environments and includes BDD (Behavior-Driven Development) testing with Cucumber and JUnit for robust API validation.
+Features
 
-Technologies Used
 CRUD Operations: Create, Read, Update, and Delete employee records.
 
 Layered Architecture: Controller → Service → Repository for maintainability.
@@ -16,7 +15,6 @@ JUnit for unit testing.
 
 Cucumber for BDD-style testing against real-world scenarios.
 
-
 Tech Stack
 
 Backend: Spring Boot (REST API, Spring Data JPA)
@@ -29,13 +27,52 @@ Testing: JUnit, Cucumber
 
 API Documentation: Swagger
 
-Future Enhancements
+⚙️ Setup & Installation
+Clone the Repository
+git clone https://github.com/YukthaDoddaRangappa/Employee-Management-RESTAPI
+cd employee-management-system
+
+Configure Database (MySQL)
+
+Update application.properties with your MySQL credentials:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+
+Run with Docker
+# Build Docker image
+docker build -t employee-management-system .
+
+# Run container
+docker run -p 8080:8080 employee-management-system
+
+ Running Tests
+Unit Tests (JUnit)
+mvn test
+
+BDD Tests (Cucumber)
+mvn verify
+
+API Endpoints
+Method	Endpoint	Description
+GET	/api/employees	Fetch all employees
+GET	/api/employees/{id}	Fetch employee by ID
+POST	/api/employees	Create new employee
+PUT	/api/employees/{id}	Update employee details
+DELETE	/api/employees/{id}	Delete employee by ID
+ Future Enhancements
 
 Add role-based authentication with Spring Security.
 
 Implement pagination and filtering for employees.
 
 Add CI/CD pipeline with GitHub Actions.
+
+Author
+
+Developed by [Your Name]
 
 Author
 Yuktha D - https://github.com/YukthaDoddaRangappa?tab=repositories
