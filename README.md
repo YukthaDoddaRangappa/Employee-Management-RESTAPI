@@ -28,3 +28,19 @@ Containerization: Docker
 Testing: JUnit, Cucumber
 
 API Documentation: Swagger
+
+Future Enhancements
+
+Add role-based authentication with Spring Security.
+
+Implement pagination and filtering for employees.
+
+Add CI/CD pipeline with GitHub Actions.
+
+Author
+Yuktha D - https://github.com/YukthaDoddaRangappa?tab=repositories
+
+Support
+If you have any questions or issues, please open an issue on GitHub or contact me at [yuktha.drangappa@gmail.com].
+
+
